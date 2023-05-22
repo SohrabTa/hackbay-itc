@@ -39,6 +39,13 @@ cd src
 npm install -f
 ```
 
+# Setup the backend
+## Migrations
+```
+python src/leadmanager/manage.py migrate
+python src/leadmanager/manage.py makemigrations
+```
+
 # Run the App
 
 ## Run the backend
