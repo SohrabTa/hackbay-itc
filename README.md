@@ -1,17 +1,27 @@
 # The ITC goes Hackbay
 
-# setup
-## start python virtual env 
+# Setup
+## Install ReactJS packages
 
-run `hackathon_env\Scripts\activate.bat`
+```
+cd src
+npm install -f
+```
 
-## start backend
- `cd src/leadmanager` and run `python manage.py runserver`
+# Start the app
+To start the python virtual env 
 
-## install packages for reactJS
+```
+hackathon_env\Scripts\activate.bat
+```
 
-`cd src` and run `npm install -f`
+To start the backend
+```
+python src/leadmanager/manage.py runserver
+```
 
-## start frontend ReactJS
-
-`cd src/leadmanager/frontend` and run `npm run dev`
+To start the frontend
+```
+cd src/leadmanager/frontend
+npm run dev
+```
