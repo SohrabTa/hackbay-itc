@@ -1,27 +1,55 @@
 # The ITC goes Hackbay
 
-# Setup
-## Install ReactJS packages
+# Setup Python Environment
+You have two options to set up the python environment:
+1. [conda](#Conda) (recommended)
+2. [venv](#Venv)
 
+## Conda
+### Setup conda environment
+```
+conda create --name <name_of_your_env>
+```
+### Start conda environment
+```
+conda activate <name_of_your_env>
+```
+### Install pip in your conda environment
+```
+conda install pip
+```
+
+## Venv
+### Setup venv
+```
+python -m venv c:\path\to\myenv
+```
+### Activate venv
+```
+c:\path\to\myenv\Scripts\activate
+```
+# Install dependencies
+## Install Python modules
+```
+pip install -r requirements.txt
+```
+## Install ReactJS packages
 ```
 cd src
 npm install -f
 ```
 
-# Start the app
-To start the python virtual env 
+# Run the App
 
-```
-hackathon_env\Scripts\activate.bat
-```
-
-To start the backend
+## Run the backend
 ```
 python src/leadmanager/manage.py runserver
 ```
 
-To start the frontend
+## Run the frontend
 ```
 cd src/leadmanager/frontend
 npm run dev
 ```
+## Access App
+Open browser at http://127.0.0.1:8000/
