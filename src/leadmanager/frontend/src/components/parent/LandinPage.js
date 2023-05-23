@@ -2,7 +2,7 @@ import React, { Component, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link} from 'react-router-dom';
 import Collapse from 'react-bootstrap/Collapse';
-import ReactModal from 'react-modal';
+import Modal from 'react-modal';
 import {Helmet} from 'react-helmet';
 
 function Example() {
@@ -21,13 +21,13 @@ function Example() {
         </button>
       </div>
 
-        <ReactModal
+        <Modal
           isOpen={isOpen}
           contentLabel="Example Modal"
           onRequestClose={() => setIsOpen(false)}
         >
           <button className='btn btn-primary' onClick={() => setIsOpen(false)} style={{top:"0", right: "0", zIndex: "9999"}}>Close</button>
-        </ReactModal>
+        </Modal>
       </div>
     );
   }

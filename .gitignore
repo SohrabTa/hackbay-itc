@@ -1,4 +1,5 @@
-__pycache__/
-dist/
 node_modules
 hackathon_database
+__pycache__
+dist
+.venv
