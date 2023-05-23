@@ -324,7 +324,7 @@ export default class LandingPage extends Component {
 
                 <div className='row pt-5'>
                         <div className='col'>
-                            <Link to="/user_marketplace"><button className='btn btn-primary' style={cta_button}>Start addventure</button></Link>
+                            <Link to="/user_marketplace"><button className='btn btn-primary' style={cta_button}>Start adventure</button></Link>
                         </div>
                 </div>
 
@@ -350,9 +350,8 @@ export default class LandingPage extends Component {
 
             <div className="row">
               <div className='col'>
-                <p className='text-justify' style={{marginTop: "2%", width: "60%", marginRight: "auto", marginLeft: "auto", marginBottom: "5%"}}>Non-Fungible Tokens, kurz NFTs, revolutionieren gerade den Kunstmarkt. Sie ermöglichen einzigartige, virtuelle Sammlerstücke, die nicht ersetz- oder kopierbar sind.
-                    Um Geld für öffentliche Einrichtungen in der Stadt München zu sammeln, gibt es von verschiedenen kulturellen Gütern ein Munich Piece. Der Erlös beim Kauf eines solchen Munich Pieces
-                    kommt der jeweiligen Einrichtungen zu gute, welche das Kunstwerk beheimatet.</p>
+                <p className='text-justify' style={{marginTop: "2%", width: "60%", marginRight: "auto", marginLeft: "auto", marginBottom: "5%"}}>The *app name* was developed to turn MRI a scary-less experience for your child. Customized according to the preferences of you and your child, our software generates individual stories, which is showed in the MRI machine. By answering a couple of questions, you can enable your child to be the super hero in a fictional world. As the software gets the story ready, you can get informed how the MRI experience will be like days ahead.  
+</p>
               </div>
             </div>
 
@@ -380,17 +379,23 @@ export default class LandingPage extends Component {
             <div className='row text-center ml-5'>
               
               <div className='col strip_section_one pt-3 pb-3 ml-2' style={styles.strip_section_one}>
-                <h3>Schritt Eins</h3>
-                 
+                <h3>Step One</h3>
+                <p>
+                  Customize the story by answering a few questions and help us generate the story for your child.
+                </p>
               </div>
 
                <div className='col strip_section_two pt-3 pb-3' style={styles.strip_section_two}>
-                  <h3>Schritt Zwei</h3>
+                  <h3>Step Two</h3>
+                  <p>Get informed what will be expecting you in your appointment.</p>
                   
               </div>
 
                <div className='col strip_section_three pt-3 pb-3' style={styles.strip_section_three}>
-                  <h3>Schritt Drei</h3>
+                  <h3>Step Three</h3>
+                  <p>
+                  Your child becomes the super-hero of their individual story in the MRI experience.
+                </p>
                   
               </div>
 
@@ -400,7 +405,7 @@ export default class LandingPage extends Component {
 
               <div className='col'>
 
-                <p className='text-right'>erfahre mehr...</p>
+                <p className='text-right'>see more...</p>
 
               </div>
 
@@ -443,7 +448,7 @@ export default class LandingPage extends Component {
                   <div className="col m-2" style={product_card}>
                     <Link to="/product_01">
                     <img style={product_img} src="https://www.mucbook.de/wp-content/uploads/2019/11/Gabriele-Anne-Welker_-Kuppeln_-2019-.jpg" className="img-fluid " />
-                    <h2 className='text-center desc_text' style={styles.desc_text}><b>Monuments</b></h2>
+                    <h2 className='text-center desc_text' style={styles.desc_text}><b>What you can expect</b></h2>
                     </Link>
                   </div>
 
