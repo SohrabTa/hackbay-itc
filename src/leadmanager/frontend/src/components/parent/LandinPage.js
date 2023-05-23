@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
-export default class LadingPage extends Component {
+export default class LandingPage extends Component {
 
       constructor(props) {
         super(props);

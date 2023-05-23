@@ -6,7 +6,10 @@ import { Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
 
 import HomePage from "./HomePage";
-
+import LandingPage from './parent/LandinPage';
+import SetUp from './parent/SetUp';
+import StoryBoard from './child/Storyboard';
+import StorySetting from './child/StorySetting';
 
 /*import { Provider } from 'react-redux';
 import store from '../store';*/
@@ -32,6 +35,10 @@ class App extends Component {
                 <Switch>
                   
                   <Route exact path="/" component={HomePage}/>
+                  <Route exact path="/landingpage" component={LandingPage}/>
+                  <Route exact path="/setup" component={SetUp}/>
+                  <Route exact path="/storyboard" component={StoryBoard}/>
+                  <Route exact path="/storysettings" component={StorySetting}/>
                  
                 </Switch>
               </div>

@@ -23,7 +23,31 @@ export default class StoryBoard extends Component {
           
           <Container>
 
-            <h1>Start</h1>
+            <div class="row">
+
+              <div class="row">
+
+                <div class="col"> 
+
+                  <img></img>
+
+                </div>
+
+              </div>
+
+              <div class="row">
+
+                <div class="col"> 
+
+                  <p>Lorrem</p>
+
+                </div>
+
+              </div>
+
+              
+
+            </div>
 
           </Container>
 
