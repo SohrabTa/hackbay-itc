@@ -350,8 +350,9 @@ export default class LandingPage extends Component {
 
             <div className="row">
               <div className='col'>
-                <p className='text-justify' style={{marginTop: "2%", width: "60%", marginRight: "auto", marginLeft: "auto", marginBottom: "5%"}}>The *app name* was developed to turn MRI a scary-less experience for your child. Customized according to the preferences of you and your child, our software generates individual stories, which is showed in the MRI machine. By answering a couple of questions, you can enable your child to be the super hero in a fictional world. As the software gets the story ready, you can get informed how the MRI experience will be like days ahead.  
-</p>
+                <p className='text-justify' style={{marginTop: "2%", width: "60%", marginRight: "auto", marginLeft: "auto", marginBottom: "5%"}}>
+                The **our-app-name** revolutionizes the MRI experience for your child, making it fear-free and enjoyable. Our app is specifically designed to cater to both you and your child's preferences, creating personalized stories that come to life during the MRI procedure. By simply answering a few questions, your child can become the hero of their own adventure in a captivating fictional world.
+With our innovative software, you'll receive advance information about what to expect during the MRI experience, ensuring you and your child are well-prepared for the MRI experience. Say goodbye to anxiety and uncertainty, as our app transforms the process into an exciting journey.</p>
               </div>
             </div>
 
@@ -381,20 +382,20 @@ export default class LandingPage extends Component {
               <div className='col strip_section_one pt-3 pb-3 ml-2' style={styles.strip_section_one}>
                 <h3>Step One</h3>
                 <p>
-                  Customize the story by answering a few questions and help us generate the story for your child.
+                Personalize your child's story by simply answering a few questions, allowing us to create a tailor-made adventure just for them. With your input, we'll generate a captivating story that will truly resonate with your child's imagination and interests.
                 </p>
               </div>
 
                <div className='col strip_section_two pt-3 pb-3' style={styles.strip_section_two}>
                   <h3>Step Two</h3>
-                  <p>Get informed what will be expecting you in your appointment.</p>
+                  <p>Stay informed and prepared for your upcoming appointment by discovering what awaits you.</p>
                   
               </div>
 
                <div className='col strip_section_three pt-3 pb-3' style={styles.strip_section_three}>
                   <h3>Step Three</h3>
                   <p>
-                  Your child becomes the super-hero of their individual story in the MRI experience.
+                  Empower your child to become the superhero of their own unique story during the MRI experience. Watch as their imagination takes flight and they embark on an extraordinary adventure.
                 </p>
                   
               </div>
