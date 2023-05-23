@@ -119,7 +119,6 @@ export default class LandingPage extends Component {
         },
 
         show_more_button: {
-          backgroundColor: "white",
           border: "none",
           color: "black",
           fontSize: "2em"
@@ -334,7 +333,6 @@ export default class LandingPage extends Component {
               <div className='col-4 main_picture_col' style={styles.main_picture_col}>
 
 
-
               </div>
 
 
@@ -426,7 +424,7 @@ export default class LandingPage extends Component {
 
                     <img style={product_img} src="https://www.momjunction.com/wp-content/uploads/2022/10/Help-the-child-exhibit-optimistic-and-confident-social-behaviors.jpg" className="img-fluid" />
 
-                    <div style={desc_product}>
+                    <div >
                       <h2 className='text-center desc_text' style={styles.desc_text}><b>Child</b></h2>
                     </div>
                     
@@ -508,6 +506,24 @@ export default class LandingPage extends Component {
 
                 
                 </section>
+
+                <div class="row" style={{marginBottom: "15%", marginTop: "5%"}}>
+
+                  <div class="col">
+
+                    <h1 class="text-center">Chatbot</h1>
+
+                    <div class="row">
+
+                      <div class="col" style={{border: "solid black 1px", width: "200px", }}>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
 
                     
               </div> 
