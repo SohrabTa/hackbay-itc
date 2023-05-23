@@ -2,7 +2,7 @@ import React, { Component, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link} from 'react-router-dom';
 import Collapse from 'react-bootstrap/Collapse';
-import ReactModal from 'react-modal';
+import Modal from 'react-modal';
 import {Helmet} from 'react-helmet';
 
 function Example() {
@@ -21,13 +21,13 @@ function Example() {
         </button>
       </div>
 
-        <ReactModal
+        <Modal
           isOpen={isOpen}
           contentLabel="Example Modal"
           onRequestClose={() => setIsOpen(false)}
         >
           <button className='btn btn-primary' onClick={() => setIsOpen(false)} style={{top:"0", right: "0", zIndex: "9999"}}>Close</button>
-        </ReactModal>
+        </Modal>
       </div>
     );
   }
@@ -324,7 +324,7 @@ export default class LandingPage extends Component {
 
                 <div className='row pt-5'>
                         <div className='col'>
-                            <Link to="/user_marketplace"><button className='btn btn-primary' style={cta_button}>Start addventure</button></Link>
+                            <Link to="/user_marketplace"><button className='btn btn-primary' style={cta_button}>Start adventure</button></Link>
                         </div>
                 </div>
 
@@ -350,9 +350,9 @@ export default class LandingPage extends Component {
 
             <div className="row">
               <div className='col'>
-                <p className='text-justify' style={{marginTop: "2%", width: "60%", marginRight: "auto", marginLeft: "auto", marginBottom: "5%"}}>Non-Fungible Tokens, kurz NFTs, revolutionieren gerade den Kunstmarkt. Sie ermöglichen einzigartige, virtuelle Sammlerstücke, die nicht ersetz- oder kopierbar sind.
-                    Um Geld für öffentliche Einrichtungen in der Stadt München zu sammeln, gibt es von verschiedenen kulturellen Gütern ein Munich Piece. Der Erlös beim Kauf eines solchen Munich Pieces
-                    kommt der jeweiligen Einrichtungen zu gute, welche das Kunstwerk beheimatet.</p>
+                <p className='text-justify' style={{marginTop: "2%", width: "60%", marginRight: "auto", marginLeft: "auto", marginBottom: "5%"}}>
+                The **our-app-name** revolutionizes the MRI experience for your child, making it fear-free and enjoyable. Our app is specifically designed to cater to both you and your child's preferences, creating personalized stories that come to life during the MRI procedure. By simply answering a few questions, your child can become the hero of their own adventure in a captivating fictional world.
+With our innovative software, you'll receive advance information about what to expect during the MRI experience, ensuring you and your child are well-prepared for the MRI experience. Say goodbye to anxiety and uncertainty, as our app transforms the process into an exciting journey.</p>
               </div>
             </div>
 
@@ -380,17 +380,23 @@ export default class LandingPage extends Component {
             <div className='row text-center ml-5'>
               
               <div className='col strip_section_one pt-3 pb-3 ml-2' style={styles.strip_section_one}>
-                <h3>Schritt Eins</h3>
-                 
+                <h3>Step One</h3>
+                <p>
+                Personalize your child's story by simply answering a few questions, allowing us to create a tailor-made adventure just for them. With your input, we'll generate a captivating story that will truly resonate with your child's imagination and interests.
+                </p>
               </div>
 
                <div className='col strip_section_two pt-3 pb-3' style={styles.strip_section_two}>
-                  <h3>Schritt Zwei</h3>
+                  <h3>Step Two</h3>
+                  <p>Stay informed and prepared for your upcoming appointment by discovering what awaits you.</p>
                   
               </div>
 
                <div className='col strip_section_three pt-3 pb-3' style={styles.strip_section_three}>
-                  <h3>Schritt Drei</h3>
+                  <h3>Step Three</h3>
+                  <p>
+                  Empower your child to become the superhero of their own unique story during the MRI experience. Watch as their imagination takes flight and they embark on an extraordinary adventure.
+                </p>
                   
               </div>
 
@@ -400,7 +406,7 @@ export default class LandingPage extends Component {
 
               <div className='col'>
 
-                <p className='text-right'>erfahre mehr...</p>
+                <p className='text-right'>see more...</p>
 
               </div>
 
@@ -443,7 +449,7 @@ export default class LandingPage extends Component {
                   <div className="col m-2" style={product_card}>
                     <Link to="/product_01">
                     <img style={product_img} src="https://www.mucbook.de/wp-content/uploads/2019/11/Gabriele-Anne-Welker_-Kuppeln_-2019-.jpg" className="img-fluid " />
-                    <h2 className='text-center desc_text' style={styles.desc_text}><b>Monuments</b></h2>
+                    <h2 className='text-center desc_text' style={styles.desc_text}><b>What you can expect</b></h2>
                     </Link>
                   </div>
 
