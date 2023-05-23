@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Image from "../assets/images/test.png"
+import Image from "../assets/images/test_2.png"
 import {Helmet} from 'react-helmet';
 import { Gi3DHammer } from "react-icons/gi";
 
@@ -29,6 +29,7 @@ export default class StoryBoard extends Component {
         return (
           <div>
           <img style={{position: "absolute", zIndex: "-9999", objectFit: "cover", width: "100%", height: "100%"}} src={Image} alt="Logo"/>
+
           <Container>
 
             <Helmet>
@@ -48,7 +49,7 @@ export default class StoryBoard extends Component {
 
               <div class="row">
 
-                <div class="col" style={{border: "solid 2px black", padding: "3%", height: "120px", borderRadius: "10px"}}> 
+                <div class="col" style={{border: "solid 2px black", padding: "3%", height: "120px", borderRadius: "10px", backgroundColor: "white"}}> 
 
                   <p style={{color: "white"}}>Lorrem</p>
 
