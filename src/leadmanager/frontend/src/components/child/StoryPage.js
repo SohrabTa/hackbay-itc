@@ -130,39 +130,21 @@ const story = {
 
 export default class StoryPage extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      key: 'tab1',
-      storyNodeDay1: story.chapter1,
-      storyNodeDay2: story.chapter3a,  // default starting chapter for day 2
-      storyNodeExamDay: story.chapter5a,  // default starting chapter for day 3
-    };
-  }
-  
-  setStoryNodeDay1 = (nodeKey) => {
-    if (['chapter1', 'chapter2', 'chapter2a', 'chapter2b'].includes(nodeKey)) {
-      this.setState({ storyNodeDay1: story[nodeKey] });
-    } else {
-      console.warn(`Invalid nodeKey '${nodeKey}' for Day2`);
-    }
-  }
-  
-  setStoryNodeDay2 = (nodeKey) => {
-    if (['chapter3a', 'chapter3b', 'chapter4a', 'chapter4b'].includes(nodeKey)) {
-      this.setState({ storyNodeDay2: story[nodeKey] });
-    } else {
-      console.warn(`Invalid nodeKey '${nodeKey}' for Day2`);
-    }
-  }
+      constructor(props) {
+        super(props);
+        this.state = {
+          key: 'tab1',
+          storyNode: story.chapter1
+        };
+      }
 
-  setStoryNodeExamDay = (nodeKey) => {
-    if (['chapter5a', 'chapter5b', 'chapter6', 'chapter7a', 'chapter7b', 'chapter8a', 'chapter8b'].includes(nodeKey)) {
-      this.setState({ storyNodeExamDay: story[nodeKey] });
-    } else {
-      console.warn(`Invalid nodeKey '${nodeKey}' for Day3`);
-    }
-  }
+      setKey = (key) => {
+        this.setState({ key });
+      }
+
+      setStoryNode = (nodeKey) => {
+        this.setState({ storyNode: story[nodeKey] });
+      }
 
     render() {
 
@@ -193,7 +175,7 @@ export default class StoryPage extends Component {
 
                     <div class="col" style={{marginLeft: "12%"}}> 
 
-                      <img style={{borderRadius: "10px", padding: "1%", width: "800px", height: "auto" }} src={this.state.storyNodeDay1.image} ></img>
+                      <img style={{borderRadius: "10px", padding: "1%", width: "800px", height: "auto" }} src={this.state.storyNode.image} ></img>
 
                     </div>
 
@@ -203,7 +185,7 @@ export default class StoryPage extends Component {
 
                     <div class="col" style={{border: "solid 2px black", textAlign: "center", padding: "1%", borderRadius: "10px", backgroundColor: "white"}}> 
 
-                      {this.state.storyNodeDay1.text}
+                      {this.state.storyNode.text}
 
                     </div>
 
@@ -211,15 +193,15 @@ export default class StoryPage extends Component {
 
                   <div class="row" style={{marginTop: "3%"}}>
 
-                    <div class="col" style={{marginLeft: this.state.storyNodeDay1.option2 ? "13%" : "40%"}}> 
+                    <div class="col" style={{marginLeft: this.state.storyNode.option2 ? "13%" : "40%"}}> 
 
-                      <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNodeDay1(this.state.storyNodeDay1.option1)}>{this.state.storyNodeDay1.option1Text}</Button>
+                      <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNode(this.state.storyNode.option1)}>{this.state.storyNode.option1Text}</Button>
 
                     </div>
                     <div class="col" style={{marginLeft: "10%"}}> 
 
-                      {this.state.storyNodeDay1.option2 && 
-                        <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNodeDay1(this.state.storyNodeDay1.option2)}>{this.state.storyNodeDay1.option2Text}</Button>
+                      {this.state.storyNode.option2 && 
+                        <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNode(this.state.storyNode.option2)}>{this.state.storyNode.option2Text}</Button>
                       }
 
                     </div>
@@ -236,7 +218,7 @@ export default class StoryPage extends Component {
 
                     <div class="col" style={{marginLeft: "12%"}}> 
 
-                      <img style={{borderRadius: "10px", padding: "1%", width: "800px", height: "auto" }} src={this.state.storyNodeDay2.image} ></img>
+                      <img style={{borderRadius: "10px", padding: "1%", width: "800px", height: "auto" }} src={this.state.storyNode.image} ></img>
 
                     </div>
 
@@ -246,7 +228,7 @@ export default class StoryPage extends Component {
 
                     <div class="col" style={{border: "solid 2px black", textAlign: "center", padding: "1%", borderRadius: "10px", backgroundColor: "white"}}> 
 
-                      {this.state.storyNodeDay2.text}
+                      {this.state.storyNode.text}
 
                     </div>
 
@@ -254,22 +236,20 @@ export default class StoryPage extends Component {
 
                   <div class="row" style={{marginTop: "3%"}}>
 
-                    <div class="col" style={{marginLeft: this.state.storyNodeDay2.option2 ? "13%" : "40%"}}> 
+                    <div class="col" style={{marginLeft: this.state.storyNode.option2 ? "13%" : "40%"}}> 
 
-                      <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNodeDay2(this.state.storyNodeDay2.option1)}>{this.state.storyNodeDay2.option1Text}</Button>
+                      <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNode(this.state.storyNode.option1)}>{this.state.storyNode.option1Text}</Button>
 
                     </div>
                     <div class="col" style={{marginLeft: "10%"}}> 
 
-                      {this.state.storyNodeDay2.option2 && 
-                        <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNodeDay2(this.state.storyNodeDay2.option2)}>{this.state.storyNodeDay2.option2Text}</Button>
+                      {this.state.storyNode.option2 && 
+                        <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNode(this.state.storyNode.option2)}>{this.state.storyNode.option2Text}</Button>
                       }
 
                     </div>
 
                   </div>
-
-
                 </Container>
               </Tab>
               <Tab eventKey="tab3" title="Examination Day">
@@ -279,7 +259,7 @@ export default class StoryPage extends Component {
 
                     <div class="col" style={{marginLeft: "12%"}}> 
 
-                      <img style={{borderRadius: "10px", padding: "1%", width: "800px", height: "auto" }} src={this.state.storyNodeExamDay.image} ></img>
+                      <img style={{borderRadius: "10px", padding: "1%", width: "800px", height: "auto" }} src={this.state.storyNode.image} ></img>
 
                     </div>
 
@@ -289,7 +269,7 @@ export default class StoryPage extends Component {
 
                     <div class="col" style={{border: "solid 2px black", textAlign: "center", padding: "1%", borderRadius: "10px", backgroundColor: "white"}}> 
 
-                      {this.state.storyNodeExamDay.text}
+                      {this.state.storyNode.text}
 
                     </div>
 
@@ -297,20 +277,22 @@ export default class StoryPage extends Component {
 
                   <div class="row" style={{marginTop: "3%"}}>
 
-                    <div class="col" style={{marginLeft: this.state.storyNodeExamDay.option2 ? "13%" : "40%"}}> 
+                    <div class="col" style={{marginLeft: this.state.storyNode.option2 ? "13%" : "40%"}}> 
 
-                      <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNodeExamDay(this.state.storyNodeExamDay.option1)}>{this.state.storyNodeExamDay.option1Text}</Button>
+                      <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNode(this.state.storyNode.option1)}>{this.state.storyNode.option1Text}</Button>
 
                     </div>
                     <div class="col" style={{marginLeft: "10%"}}> 
 
-                      {this.state.storyNodeExamDay.option2 && 
-                        <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNodeExamDay(this.state.storyNodeExamDay.option2)}>{this.state.storyNodeExamDay.option2Text}</Button>
+                      {this.state.storyNode.option2 && 
+                        <Button style={{backgroundColor: "white", color: "blue"}} onClick={() => this.setStoryNode(this.state.storyNode.option2)}>{this.state.storyNode.option2Text}</Button>
                       }
 
                     </div>
 
                   </div>
+
+
                 </Container>
               </Tab>
             </Tabs>
