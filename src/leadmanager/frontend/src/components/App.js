@@ -11,6 +11,7 @@ import SetUp from './parent/SetUp';
 import StoryBoard from './child/Storyboard';
 import StorySetting from './child/StorySetting';
 import Congrats from './child/Congrats';
+import StoryPage from './child/StoryPage';
 
 /*import { Provider } from 'react-redux';
 import store from '../store';*/
@@ -41,6 +42,8 @@ class App extends Component {
                   <Route exact path="/storyboard" component={StoryBoard}/>
                   <Route exact path="/storysettings" component={StorySetting}/>
                   <Route exact path="/congratulations" component={Congrats}/>
+                  <Route exact path="/storypage" component={StoryPage}/>
+                 
                 </Switch>
               </div>
             </Fragment>
