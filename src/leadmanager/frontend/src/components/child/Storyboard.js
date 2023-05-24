@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Image from "../assets/images/test_2.png"
+import Image from "../assets/images/background.png"
 import {Helmet} from 'react-helmet';
 import { Gi3DHammer } from "react-icons/gi";
 
