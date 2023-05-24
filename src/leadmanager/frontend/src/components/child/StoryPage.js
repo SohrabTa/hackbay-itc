@@ -143,6 +143,13 @@ export default class StoryPage extends Component {
       }
 
       setStoryNode = (nodeKey) => {
+
+        if (nodeKey === 'FinalPage') {
+
+                    this.props.history.push('/congratulations');
+          
+                  }
+
         this.setState({ storyNode: story[nodeKey] });
       }
 

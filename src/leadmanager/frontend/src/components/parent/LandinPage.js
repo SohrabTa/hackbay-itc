@@ -328,7 +328,7 @@ export default class LandingPage extends Component {
 
                 <div className='row pt-5'>
                         <div className='col'>
-                            <Link to="/user_marketplace"><button className='btn btn-primary' style={cta_button}>Start adventure</button></Link>
+                            <Link to="/storyboard"><button className='btn btn-primary' style={cta_button}>Start adventure</button></Link>
                         </div>
                 </div>
 
