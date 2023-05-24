@@ -10,6 +10,7 @@ import LandingPage from './parent/LandinPage';
 import SetUp from './parent/SetUp';
 import StoryBoard from './child/Storyboard';
 import StorySetting from './child/StorySetting';
+import Congrats from './child/Congrats';
 
 /*import { Provider } from 'react-redux';
 import store from '../store';*/
@@ -39,7 +40,7 @@ class App extends Component {
                   <Route exact path="/setup" component={SetUp}/>
                   <Route exact path="/storyboard" component={StoryBoard}/>
                   <Route exact path="/storysettings" component={StorySetting}/>
-                 
+                  <Route exact path="/congratulations" component={Congrats}/>
                 </Switch>
               </div>
             </Fragment>

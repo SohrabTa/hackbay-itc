@@ -27,6 +27,7 @@
     "react-animation-on-scroll": "^5.1.0",
     "react-bootstrap": "^2.7.0",
     "react-collapsed": "^3.6.0",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
