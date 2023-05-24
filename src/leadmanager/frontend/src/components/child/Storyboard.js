@@ -87,10 +87,22 @@ export default class StoryBoard extends Component {
                 <h1> pirot adventure</h1>
                 <button id="pirotButton">Select</button>
                 </div>
+
+                <div class="col" style={{marginLeft: "20%"}}> 
+          
                 <img style={{borderRadius: "10px", width: "250px", height: "auto" }} src={pirotAdv}></img>
-                <h1> I want to go on adventure about...</h1>
-                <button id="pirotButton">Select</button>
+                <h1> I want to go on adventure about..</h1>
+                
+                <input type="text" id="userInputField"></input>
+                <button id="submitButton">Submit</button>
                 </div>
+                
+                
+
+              </div>
+
+          
+
             
 
           </Container>
