@@ -42,6 +42,7 @@ class App extends Component {
                   
 
                   <Route exact path="/landingpage" component={LandingPage}/>
+                  <Route exact path="/" component={LandingPage}/>
                   <Route exact path="/setup" component={SetUp}/>
                   <Route exact path="/storyboard" component={StoryBoard}/>
                   <Route exact path="/storysettings" component={StorySetting}/>

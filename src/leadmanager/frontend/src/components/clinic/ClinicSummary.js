@@ -7,20 +7,6 @@ import Image_2 from '../assets/images/image_2.png';
 import Image_3 from '../assets/images/image_3.png';
 import Image_4 from '../assets/images/image_4.png';
 
-const images = [
-    {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
-  ];
 
 import {
     MDBBtn,
@@ -123,9 +109,9 @@ function TableFunc() {
         <MDBRow>
 
               <MDBCol  className='order-2 order-lg-1 d-flex flex-column align-items-center'>
-
+              <h5 style={{textAlign: "center", marginBottom: "1%"}}>Start Projection</h5>
                 <MDBBtn className='mb-4 text-center' size='lg' style={{width: "20%", borderRadius: "15px", height: "60px"}}><VscDebugStart style={{fontSize: "2em"}}></VscDebugStart></MDBBtn>
-                <h5 style={{textAlign: "center", marginBottom: "5%"}}>Start Projection</h5>
+                
 
             </MDBCol>
 

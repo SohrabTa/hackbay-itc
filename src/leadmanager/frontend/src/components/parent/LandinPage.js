@@ -4,6 +4,9 @@ import { Link} from 'react-router-dom';
 import Collapse from 'react-bootstrap/Collapse';
 import Modal from 'react-modal';
 import {Helmet} from 'react-helmet';
+import { Canvas } from "@react-three/fiber";
+
+
 
 function Example() {
 
@@ -188,10 +191,9 @@ export default class LandingPage extends Component {
 
 
         main_picture_col:{
-          marginTop: "-8%",
-          marginLeft: "6%",
           boxShadow: "rgb(0 0 0 / 6%) 0px 10px 18px",
           padding: "1%",
+          width: "700px"
         },
 
         main_picture_small_text:{
@@ -311,7 +313,7 @@ export default class LandingPage extends Component {
                 <div className='row pb-3'>
 
                   <div className='col-md-10'>
-                    <h1 className='main_headline' style={styles.main_headline_second_variant}>Welcome to the immersive MRI</h1>
+                    <h1 className='main_headline' style={styles.main_headline_second_variant}>Welcome to the immersive Dreamquest</h1>
                   </div>
 
                 </div>
@@ -332,8 +334,9 @@ export default class LandingPage extends Component {
 
               </div>
 
-              <div className='col-4 main_picture_col' style={styles.main_picture_col} src={Image}>
-              
+              <div className='col-6 main_picture_col' style={styles.main_picture_col}>
+                
+                <img style={{width: "550px", height: "auto"}} src="https://www.310klinik.com/wp-content/uploads/2018/02/Kernspint-1024x683.jpg"></img>
 
               </div>
 
