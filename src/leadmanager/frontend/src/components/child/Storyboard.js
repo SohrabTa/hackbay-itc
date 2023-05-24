@@ -5,7 +5,7 @@ import Image2 from "../assets/images/background.png"
 import Image from "../assets/images/whatadventure.png"
 import {Helmet} from 'react-helmet';
 import { Gi3DHammer } from "react-icons/gi";
-import newImage from "../assets/images/test_2.png"
+import newImage from "../assets/images/background_sb.png"
 
 import spaceAdv from "../assets/images/space_adv.jpg.png"
 import pirotAdv from "../assets/images/pirot.png"

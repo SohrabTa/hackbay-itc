@@ -446,14 +446,7 @@ With our innovative software, you'll receive advance information about what to e
                       <h2 className='text-center desc_text' style={styles.desc_text}><b>How an MRI works</b></h2>
                       </Link>
                     </div>
-                  </div>
-
-                  <div className="col m-2" style={product_card}>
-                    <Link to="/product_01">
-                    <img style={product_img} src="https://www.mucbook.de/wp-content/uploads/2019/11/Gabriele-Anne-Welker_-Kuppeln_-2019-.jpg" className="img-fluid " />
-                    <h2 className='text-center desc_text' style={styles.desc_text}><b>What you can expect</b></h2>
-                    </Link>
-                  </div>
+                  </div>                 
 
                 </div>
 

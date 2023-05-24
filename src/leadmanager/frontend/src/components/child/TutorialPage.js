@@ -3,11 +3,7 @@ import { Container } from 'react-bootstrap';
 import { Link} from 'react-router-dom';
 import Collapse from 'react-bootstrap/Collapse';
 import { FaConnectdevelop, FaPuzzlePiece, FaHandHoldingUsd, FaHandHoldingHeart } from 'react-icons/fa';
-import Image from "../assets/images/test_2.png"
 
-function Storyimage() {
-    return <img src={Image} alt="Logo" />;
-  }
 export default class HomePage extends Component {
 
       constructor(props) {
