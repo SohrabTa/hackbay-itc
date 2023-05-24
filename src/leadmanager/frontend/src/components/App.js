@@ -13,6 +13,7 @@ import StorySetting from './child/StorySetting';
 import Congrats from './child/Congrats';
 import StoryPage from './child/StoryPage';
 
+import TutorialPage from './child/TutorialPage';
 /*import { Provider } from 'react-redux';
 import store from '../store';*/
 
@@ -36,7 +37,7 @@ class App extends Component {
               <div>
                 <Switch>
                   
-                  <Route exact path="/" component={HomePage}/>
+
                   <Route exact path="/landingpage" component={LandingPage}/>
                   <Route exact path="/setup" component={SetUp}/>
                   <Route exact path="/storyboard" component={StoryBoard}/>
@@ -44,6 +45,7 @@ class App extends Component {
                   <Route exact path="/congratulations" component={Congrats}/>
                   <Route exact path="/storypage" component={StoryPage}/>
                  
+                  <Route exact path="/tutorialpage" component={TutorialPage}/>
                 </Switch>
               </div>
             </Fragment>

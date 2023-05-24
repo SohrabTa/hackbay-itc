@@ -288,7 +288,9 @@ export default class LandingPage extends Component {
         borderRadius: "10px"
       };
 
-
+      function Storyimage() {
+          return <img src={Image} alt="Logo" />;
+        }
     
         return (
           
@@ -330,8 +332,8 @@ export default class LandingPage extends Component {
 
               </div>
 
-              <div className='col-4 main_picture_col' style={styles.main_picture_col}>
-
+              <div className='col-4 main_picture_col' style={styles.main_picture_col} src={Image}>
+              
 
               </div>
 
@@ -444,71 +446,14 @@ With our innovative software, you'll receive advance information about what to e
                       <h2 className='text-center desc_text' style={styles.desc_text}><b>How an MRI works</b></h2>
                       </Link>
                     </div>
-                  </div>
-
-                  <div className="col m-2" style={product_card}>
-                    <Link to="/product_01">
-                    <img style={product_img} src="https://www.mucbook.de/wp-content/uploads/2019/11/Gabriele-Anne-Welker_-Kuppeln_-2019-.jpg" className="img-fluid " />
-                    <h2 className='text-center desc_text' style={styles.desc_text}><b>What you can expect</b></h2>
-                    </Link>
-                  </div>
+                  </div>                 
 
                 </div>
 
-                <Collapse in={!this.state.collapseMenu}>
-
-                  <div className="first_collapse">
                 
-                  <div className="row d-flex justify-content-between mt-5">
-
-                  <div className="col m-2" style={product_card}>
-                    <Link to="/product_01">
-                      <img style={product_img} src="https://thumbs.dreamstime.com/z/graffiti-art-munich-germany-169975305.jpg" className="img-fluid " />
-                    <h2 className='text-center desc_text' style={styles.desc_text}><b>Graffiti</b></h2>
-                    </Link>
-                  </div>
-
-                  <div className="col m-2" style={product_card}>
-                    <div>
-                      <Link to="/product_01">
-                      <img style={product_img} src="https://images.saatchiart.com/saatchi/311983/art/1964101/1085587-HSC00001-7.jpg" className="img-fluid " />
-                      <h2 className='text-center desc_text' style={styles.desc_text}><b>Fauvismus</b></h2>
-                      </Link>
-                    </div>
-                  </div>
-
-                  <div className="col m-2" style={product_card}>
-                    <Link to="/product_01">
-                    <img style={product_img} src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Hitler_Watercolor_-_Munich_Royal_Hofbr%C3%A4uhaus.jpg/800px-Hitler_Watercolor_-_Munich_Royal_Hofbr%C3%A4uhaus.jpg" className="img-fluid " />
-                    <h2 className='text-center desc_text' style={styles.desc_text}><b>Realismus</b></h2>
-                    </Link>
-                  </div>
-                    
-                </div>
-
-                </div>
-
-                </Collapse>
 
 
-                <div className='row text-center mt-2'>
-                  
-                  <div className='col'>
-
-                    <button
-                      onClick={this.showHide}
-                      className="btn btn-primary show_more_button"
-                      style={styles.show_more_button}
-                      type="button"
-                      data-target="first_collapse"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                      >
-                      ...
-                  </button>
-
-                  </div>
-                </div>
+                
 
                 
                 </section>
